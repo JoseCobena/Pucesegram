@@ -15,6 +15,7 @@
     <string name="timecard_card">4 days</string>
     <string name="likenumbercard_card">10 likes</string>
     <string name="hint_password">Password</string>
+    <string name="text_button_signOut">Sign Out</string>
 
 
 </resources>
