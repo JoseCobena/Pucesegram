@@ -23,6 +23,8 @@
         <activity
             android:name=".view.CreateAccountActivity"
             android:parentActivityName=".LoginActivity" />
+        <activity android:name=".view.HomeActivity"
+            android:parentActivityName=".LoginActivity"/>
         <meta-data
             android:name="andorid.support.PARENT_ACTIVITY"
             android:value=".LoginActivity" />

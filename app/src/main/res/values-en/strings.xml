@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-
+    <string name="app_name">Pucesegram</string>
+    <string name="title_activity_referencia">ReferenciaActivity</string>
+    <string name="hint_username">Username</string>
+    <string name="text_button_login">Login</string>
     <string name="dont_have_account">¿Dont have an account?</string>
     <string name="create_here">Create Here</string>
     <string name="hint_email">mail</string>
@@ -10,12 +13,15 @@
     <string name="hint_confirm_password">Confirm Password</string>
     <string name="text_button_createaccount">Join us</string>
     <string name="toolbar_createaccount">Create Account</string>
+    <string name="toolbar_home">Home</string>
     <string name="username_card">Pocho</string>
     <string name="firstword_card">Make</string>
     <string name="timecard_card">4 days</string>
     <string name="likenumbercard_card">10 likes</string>
     <string name="hint_password">Password</string>
     <string name="text_button_signOut">Sign Out</string>
+    <string name="hello_world">Hello world</string>
+    <string name="sign_out">Sign Out</string>
 
 
 </resources>
