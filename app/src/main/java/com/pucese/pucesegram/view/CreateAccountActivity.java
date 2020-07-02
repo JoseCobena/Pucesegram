@@ -9,6 +9,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.widget.Button;
 import android.view.View;
 import android.widget.Button;
@@ -58,7 +59,7 @@ public class CreateAccountActivity extends AppCompatActivity
         mEditTextConfirmPass = (EditText) findViewById(R.id.confirmPassword);
         mButtonRegister = (Button) findViewById(R.id.joiUs);
 
-        mDatabase = FirebaseDatabase.getInstance().getReference();
+
 
         mButtonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,12 +72,16 @@ public class CreateAccountActivity extends AppCompatActivity
 
                 if (!name.isEmpty() && !email.isEmpty() && !username.isEmpty() && !password.isEmpty() && !confpassword.isEmpty()){
                     if (password.length() >=6){
-                        registerUser();
+                        if (password.equals(confpassword)) {
+                            registerUser();
+                        }else{
+                            Toast.makeText(CreateAccountActivity.this, "Las contraseñas deben ser iguales", Toast.LENGTH_SHORT).show();
+                        }
                     }else{
                         Toast.makeText(CreateAccountActivity.this, "La contraseña debe tener al menos 6 caracteres", Toast.LENGTH_SHORT).show();
                     }
                 }else{
-                    Toast.makeText(CreateAccountActivity.this, "Debe completar todos los campos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CreateAccountActivity.this, "Debe completar todos los campos correctamente", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -91,20 +96,30 @@ public class CreateAccountActivity extends AppCompatActivity
                     map.put("name", name);
                     map.put("username", username);
                     map.put("password", password);
-
-                    String id = mAuth.getCurrentUser().getUid();
-                    mDatabase.child("users").child(id).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
-                        @Override
-                        public void onComplete(@NonNull Task<Void> task2) {
-                            if (task2.isSuccessful()){
-                                Intent intent = new Intent(CreateAccountActivity.this, LoginActivity.class);
-                                startActivity(intent);
-                                finish();
-                            }else{
-                                Toast.makeText(CreateAccountActivity.this, "No se pudieron crear los datos correctamente", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(CreateAccountActivity.this, LoginActivity.class);
+                    startActivity(intent);
+                    finish();
+                    mDatabase = FirebaseDatabase.getInstance().getReference();
+                    String id = mAuth.getCurrentUser().getUid();/*
+                    try {
+                        mDatabase.child("Users").child(id).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task2) {
+                                if (task2.isSuccessful()){
+                                    Intent intent = new Intent(CreateAccountActivity.this, LoginActivity.class);
+                                    startActivity(intent);
+                                    finish();
+                                }else{
+                                    Toast.makeText(CreateAccountActivity.this, "No se pudieron crear los datos correctamente", Toast.LENGTH_SHORT).show();
+                                }
                             }
-                        }
-                    });
+                        });
+                    } catch (Exception ex)
+                    {
+                        String error;
+                        error = ex.toString();
+                        Log.d("STATE",ex.toString());
+                    }*/
                 }else{
                     Toast.makeText(CreateAccountActivity.this, "No se pudo registrar este usuario", Toast.LENGTH_SHORT).show();
                 }
