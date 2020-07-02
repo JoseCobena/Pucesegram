@@ -96,11 +96,11 @@ public class CreateAccountActivity extends AppCompatActivity
                     map.put("name", name);
                     map.put("username", username);
                     map.put("password", password);
-                    Intent intent = new Intent(CreateAccountActivity.this, LoginActivity.class);
+                    /*Intent intent = new Intent(CreateAccountActivity.this, LoginActivity.class);
                     startActivity(intent);
-                    finish();
+                    finish();*/
                     mDatabase = FirebaseDatabase.getInstance().getReference();
-                    String id = mAuth.getCurrentUser().getUid();/*
+                    String id = mAuth.getCurrentUser().getUid();
                     try {
                         mDatabase.child("Users").child(id).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
@@ -119,7 +119,7 @@ public class CreateAccountActivity extends AppCompatActivity
                         String error;
                         error = ex.toString();
                         Log.d("STATE",ex.toString());
-                    }*/
+                    }
                 }else{
                     Toast.makeText(CreateAccountActivity.this, "No se pudo registrar este usuario", Toast.LENGTH_SHORT).show();
                 }

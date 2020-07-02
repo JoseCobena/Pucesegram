@@ -20,4 +20,16 @@
     <string name="text_button_signOut">Cerrar sesion</string>
     <string name="hello_world">Hello world</string>
     <string name="sign_out">Sign Out</string>
+
+    <string-array name="Lugares_tuísticos">
+        <item>Esmeraldas</item>
+        <item>Atacames</item>
+        <item>Sua</item>
+        <item>Mompiche</item>
+        <item>Tonsupa</item>
+        <item>Tonchigûe</item>
+        <item>Portete</item>
+        <item>Muisne</item>
+    </string-array>
+
 </resources>
