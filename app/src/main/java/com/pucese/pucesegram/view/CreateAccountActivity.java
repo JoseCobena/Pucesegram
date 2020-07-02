@@ -93,11 +93,12 @@ public class CreateAccountActivity extends AppCompatActivity
                     map.put("password", password);
 
                     String id = mAuth.getCurrentUser().getUid();
-                    mDatabase.child("Users").child(id).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    mDatabase.child("users").child(id).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task2) {
                             if (task2.isSuccessful()){
-                                startActivity(new Intent(CreateAccountActivity.this, LoginActivity.class));
+                                Intent intent = new Intent(CreateAccountActivity.this, LoginActivity.class);
+                                startActivity(intent);
                                 finish();
                             }else{
                                 Toast.makeText(CreateAccountActivity.this, "No se pudieron crear los datos correctamente", Toast.LENGTH_SHORT).show();
