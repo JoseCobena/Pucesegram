@@ -71,14 +71,26 @@ public class CreateAccountActivity extends AppCompatActivity
                 confpassword = mEditTextConfirmPass.getText().toString();
 
                 if (!name.isEmpty() && !email.isEmpty() && !username.isEmpty() && !password.isEmpty() && !confpassword.isEmpty()){
-                    if (password.length() >=6){
-                        if (password.equals(confpassword)) {
-                            registerUser();
+                    if (password.length() >=8){
+                        if (password.matches("(.*[0-9].*)")){
+                            if (password.matches("(.*[A-Z].*)")){
+                                if (password.matches("^(?=.*[_.*()*#!/$&@]).*$")){
+                                    if (password.equals(confpassword)) {
+                                        registerUser();
+                                    }else{
+                                        Toast.makeText(CreateAccountActivity.this, "Las contraseñas deben ser iguales", Toast.LENGTH_SHORT).show();
+                                    }
+                                }else{
+                                    Toast.makeText(CreateAccountActivity.this, "La contraseña requiere al menos un caracter especial", Toast.LENGTH_SHORT).show();
+                                }
+                            }else{
+                                Toast.makeText(CreateAccountActivity.this, "La contraseña requiere mayusculas", Toast.LENGTH_SHORT).show();
+                            }
                         }else{
-                            Toast.makeText(CreateAccountActivity.this, "Las contraseñas deben ser iguales", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(CreateAccountActivity.this, "La contraseña requiere al menos un numero", Toast.LENGTH_SHORT).show();
                         }
                     }else{
-                        Toast.makeText(CreateAccountActivity.this, "La contraseña debe tener al menos 6 caracteres", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CreateAccountActivity.this, "La contraseña debe tener al menos 8 caracteres", Toast.LENGTH_SHORT).show();
                     }
                 }else{
                     Toast.makeText(CreateAccountActivity.this, "Debe completar todos los campos correctamente", Toast.LENGTH_SHORT).show();
