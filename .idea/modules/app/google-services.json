@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "230338494891",
+    "firebase_url": "https://pucesegram-2-3f424.firebaseio.com",
+    "project_id": "pucesegram-2-3f424",
+    "storage_bucket": "pucesegram-2-3f424.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230338494891:android:df08f836994b65764592ee",
+        "android_client_info": {
+          "package_name": "com.pucese.pucesegram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230338494891-u8qjo7vhot1k87bf5u73hf1ggjam2lrp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pucese.pucesegram",
+            "certificate_hash": "0be7e63fd0bf12ab0750e94afc1aa428d7fad6a0"
+          }
+        },
+        {
+          "client_id": "230338494891-q4om1n3c7nnenepn15tokt0hdeh52gj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALI-NGsMgKU9_8wld44k8LZtd0mw4ByAU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230338494891-q4om1n3c7nnenepn15tokt0hdeh52gj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

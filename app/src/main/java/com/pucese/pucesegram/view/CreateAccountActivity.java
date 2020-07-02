@@ -69,17 +69,6 @@ public class CreateAccountActivity extends AppCompatActivity
                 password = mEditTextPassword.getText().toString();
                 confpassword = mEditTextConfirmPass.getText().toString();
 
-                AlertDialog alertDialog = new AlertDialog.Builder(CreateAccountActivity.this).create();
-                alertDialog.setTitle("Alert");
-                alertDialog.setMessage("Alert message to be shown");
-                alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                            }
-                        });
-                alertDialog.show();
-                /*
                 if (!name.isEmpty() && !email.isEmpty() && !username.isEmpty() && !password.isEmpty() && !confpassword.isEmpty()){
                     if (password.length() >=6){
                         registerUser();
@@ -89,7 +78,6 @@ public class CreateAccountActivity extends AppCompatActivity
                 }else{
                     Toast.makeText(CreateAccountActivity.this, "Debe completar todos los campos", Toast.LENGTH_SHORT).show();
                 }
-                */
             }
         });
     }
