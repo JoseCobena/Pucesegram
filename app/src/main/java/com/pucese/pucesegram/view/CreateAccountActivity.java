@@ -54,7 +54,7 @@ public class CreateAccountActivity extends AppCompatActivity
         mEditTextEmail = (EditText) findViewById(R.id.email);
         mEditTextName = (EditText) findViewById(R.id.name);
         mEditTextUsername = (EditText) findViewById(R.id.user);
-        mEditTextPassword = (EditText) findViewById(R.id.password);
+        mEditTextPassword = (EditText) findViewById(R.id.password_createaccount);
         mEditTextConfirmPass = (EditText) findViewById(R.id.confirmPassword);
         mButtonRegister = (Button) findViewById(R.id.joiUs);
 
