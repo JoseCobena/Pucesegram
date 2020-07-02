@@ -9,14 +9,11 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-<<<<<<< Updated upstream
 import android.widget.Button;
-=======
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
->>>>>>> Stashed changes
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -52,9 +49,7 @@ public class CreateAccountActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
         showToolbar(getResources().getString(R.string.toolbar_createaccount),true);
-<<<<<<< Updated upstream
 
-=======
         mAuth = FirebaseAuth.getInstance();
         mEditTextEmail = (EditText) findViewById(R.id.email);
         mEditTextName = (EditText) findViewById(R.id.name);
@@ -97,7 +92,6 @@ public class CreateAccountActivity extends AppCompatActivity
                 */
             }
         });
->>>>>>> Stashed changes
     }
     private void registerUser(){
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
