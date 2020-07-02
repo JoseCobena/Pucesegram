@@ -18,6 +18,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.pucese.pucesegram.view.CreateAccountActivity;
 import com.pucese.pucesegram.view.HomeActivity;
+import com.pucese.pucesegram.view.ResetPasswordActivity;
 
 public class LoginActivity extends AppCompatActivity
 {
@@ -58,6 +59,11 @@ public class LoginActivity extends AppCompatActivity
     {
         Intent intent=new Intent(this, CreateAccountActivity.class);
        startActivity(intent);
+    }
+    public void goResetPassword(View view)
+    {
+        Intent intent=new Intent(this, ResetPasswordActivity.class);
+        startActivity(intent);
     }
 
     private void loginUser(FirebaseAuth btnAuth, String email, String password){

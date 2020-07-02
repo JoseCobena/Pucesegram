@@ -20,16 +20,17 @@
     <string name="text_button_signOut">Cerrar sesion</string>
     <string name="hello_world">Hello world</string>
     <string name="sign_out">Sign Out</string>
+    <string name="Reset_Password">Restablecer contraseña</string>
+    <string name="Forgot_Password">Olvidé mi contraseña</string>
 
-    <string-array name="Lugares_tuísticos">
-        <item>Esmeraldas</item>
-        <item>Atacames</item>
-        <item>Sua</item>
-        <item>Mompiche</item>
-        <item>Tonsupa</item>
-        <item>Tonchigûe</item>
+    <string-array name="Lugares_turisticos">
         <item>Portete</item>
+        <item>Atacames</item>
+        <item>Las Palmas</item>
+        <item>Mompiche</item>
         <item>Muisne</item>
+        <item>Galera</item>
+        <item>Estero de plátano</item>
     </string-array>
 
 </resources>

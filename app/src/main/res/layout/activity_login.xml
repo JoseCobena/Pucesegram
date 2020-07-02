@@ -99,6 +99,19 @@
                         android:onClick="goCreateAccount"
                         />
 
+                    <TextView
+                        android:id="@+id/Resetpass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/createHere"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="40dp"
+                        android:onClick="goResetPassword"
+                        android:text="@string/Forgot_Password"
+                        android:textColor="@color/editTextColorWhite"
+                        android:textSize="@dimen/textsize_donthaveaccount"
+                        android:textStyle="bold" />
+
                 </RelativeLayout>
 
             </LinearLayout>

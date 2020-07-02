@@ -107,10 +107,6 @@ public class CreateAccountActivity extends AppCompatActivity
                     map.put("email", email);
                     map.put("name", name);
                     map.put("username", username);
-                    map.put("password", password);
-                    /*Intent intent = new Intent(CreateAccountActivity.this, LoginActivity.class);
-                    startActivity(intent);
-                    finish();*/
                     mDatabase = FirebaseDatabase.getInstance().getReference();
                     String id = mAuth.getCurrentUser().getUid();
                     try {
