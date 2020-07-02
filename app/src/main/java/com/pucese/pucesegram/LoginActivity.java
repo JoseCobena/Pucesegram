@@ -24,8 +24,6 @@ public class LoginActivity extends AppCompatActivity
     private EditText mEditTextEmail;
     private EditText mEditTextPassword;
     private Button mButtonLogin;
-    private String email = "";
-    private String password = "";
     private FirebaseAuth mAuth;
 
     @Override
@@ -34,7 +32,6 @@ public class LoginActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        mAuth = FirebaseAuth.getInstance();
         mEditTextEmail= (EditText) findViewById(R.id.email);
         mEditTextPassword = (EditText) findViewById(R.id.password);
         mButtonLogin = (Button) findViewById(R.id.login);
@@ -43,10 +40,14 @@ public class LoginActivity extends AppCompatActivity
         mButtonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String email = "";
+                String password = "";
+                mAuth = FirebaseAuth.getInstance();
+
                 email = mEditTextEmail.getText().toString();
                 password = mEditTextPassword.getText().toString();
                 if(!email.isEmpty() && !password.isEmpty()){
-                    loginUser();
+                    loginUser(mAuth, email, password);
                 }else{
                     Toast.makeText(LoginActivity.this, "Complete los campos", Toast.LENGTH_SHORT).show();
                 }
@@ -59,8 +60,8 @@ public class LoginActivity extends AppCompatActivity
        startActivity(intent);
     }
 
-    private void loginUser(){
-        mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+    private void loginUser(FirebaseAuth btnAuth, String email, String password){
+        btnAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful())
