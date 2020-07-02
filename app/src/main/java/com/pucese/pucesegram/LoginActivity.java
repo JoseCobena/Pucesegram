@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity
                 {
                     Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                     startActivity(intent);
-                    //finish();
+                    finish();
                 }else{
                     Toast.makeText(LoginActivity.this, "No es posible iniciar sesión, compruebe sus datos", Toast.LENGTH_SHORT).show();
                 }
