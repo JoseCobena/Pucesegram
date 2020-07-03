@@ -36,5 +36,23 @@
         <item>Galera</item>
         <item>Estero de plátano</item>
     </string-array>
+    <string-array name="likes">
+        <item>10 me gusta </item>
+        <item>7 me gusta</item>
+        <item>15 me gusta</item>
+        <item>8 me gusta</item>
+        <item>2 me gusta</item>
+        <item>4 me gusta</item>
+        <item>3 me gusta</item>
+    </string-array>
+    <string-array name="makeCard">
+        <item>4 días</item>
+        <item>3 días</item>
+        <item>8 días</item>
+        <item>15 días</item>
+        <item>1 día</item>
+        <item>8 días</item>
+        <item>3 días</item>
+    </string-array>
 
 </resources>

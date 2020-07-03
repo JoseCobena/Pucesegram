@@ -14,12 +14,16 @@ import com.pucese.pucesegram.R;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
     String data1[];
+    String data2[];
+    String data3[];
     int images[];
     Context context;
 
-    public Adapter(Context ct, String s1[], int img[]){
+    public Adapter(Context ct, String s1[], String s2[], String s3[], int img[]){
         context = ct;
         data1 = s1;
+        data2 = s2;
+        data3 = s3;
         images = img;
     }
     @NonNull
@@ -33,6 +37,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.myText1.setText(data1[position]);
+        holder.myText2.setText(data2[position]);
+        holder.myText3.setText(data3[position]);
         holder.myimage.setImageResource(images[position]);
     }
 
@@ -43,10 +49,14 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView myText1;
+        TextView myText2;
         ImageView myimage;
+        TextView myText3;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             myText1 = itemView.findViewById(R.id.userNameCard);
+            myText2 = itemView.findViewById(R.id.likeNumberCard);
+            myText3 = itemView.findViewById(R.id.timeCard);
             myimage = itemView.findViewById(R.id.pictureCard);
         }
     }

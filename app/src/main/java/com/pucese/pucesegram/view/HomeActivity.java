@@ -25,6 +25,8 @@ public class HomeActivity extends AppCompatActivity {
 
 
     String s1[];
+    String s2[];
+    String s3[];
     int images[] = {R.drawable.portete, R.drawable.atacames, R.drawable.las_palmas, R.drawable.mompiche,
     R.drawable.muisne, R.drawable.galera, R.drawable.estero_de_platano};
     private Button mButtonSignOut;
@@ -37,8 +39,10 @@ public class HomeActivity extends AppCompatActivity {
 
         ViewRecycler = findViewById(R.id.ViewRecycler);
         s1 = getResources().getStringArray(R.array.Lugares_turisticos);
+        s2 = getResources().getStringArray(R.array.likes);
+        s3 = getResources().getStringArray(R.array.makeCard);
 
-        Adapter adapter = new Adapter(this, s1, images);
+        Adapter adapter = new Adapter(this, s1, s2, s3, images);
         ViewRecycler.setAdapter(adapter);
         ViewRecycler.setLayoutManager(new LinearLayoutManager(this));
 
