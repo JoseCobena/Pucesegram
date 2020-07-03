@@ -56,6 +56,11 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
     }
+    public void goPictureDetail(View view)
+    {
+        Intent intent=new Intent(this, PictureDetailActivity.class);
+        startActivity(intent);
+    }
     private void getUserId(){
         String id = mAuth.getCurrentUser().getUid();
         mDatabase.child("Users").child(id).addValueEventListener(new ValueEventListener() {

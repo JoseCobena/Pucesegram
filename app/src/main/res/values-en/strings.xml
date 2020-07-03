@@ -2,12 +2,12 @@
 
 <resources>
     <string name="app_name">Pucesegram</string>
-    <string name="title_activity_referencia">ReferenciaActivity</string>
+    <string name="title_activity_referencia">Tourist places</string>
     <string name="hint_username">Username</string>
     <string name="text_button_login">Login</string>
     <string name="dont_have_account">¿Dont have an account?</string>
     <string name="create_here">Create Here</string>
-    <string name="hint_email">mail</string>
+    <string name="hint_email">Email</string>
     <string name="hint_name">Name</string>
     <string name="hint_user">User</string>
     <string name="hint_confirm_password">Confirm Password</string>
@@ -24,6 +24,10 @@
     <string name="sign_out">Sign Out</string>
     <string name="Reset_Password">Reset Password</string>
     <string name="Forgot_Password">Olvidé mi contraseña</string>
+    <string name="transitionname_picture">transitionnamepicture</string>
+    <string name="secondword_detail">Like</string>
+    <string name="titleimagedetail">Welcome to Esmeraldas</string>
+    <string name="lorem">Esmeraldas is an Ecuadorian city; Cantonal head of the Esmeraldas Canton and capital of the Esmeraldas Province, as well as the largest and most populous city of the same. It is located on the right bank of the mouth of the Esmeraldas River, north of the Ecuadorian coastal region, at an altitude of 15 meters above sea level and with a tropical rainy climate of 25 ° C on average.</string>
 
     <string-array name="Lugares_turisticos">
         <item>Portete</item>
