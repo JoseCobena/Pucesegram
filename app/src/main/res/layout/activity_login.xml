@@ -46,10 +46,10 @@
                     android:theme="@style/EditTextWhite"
                     >
                     <android.support.design.widget.TextInputEditText
-                        android:id="@+id/username"
+                        android:id="@+id/email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/hint_username"
+                        android:hint="@string/hint_email"
                         />
                 </android.support.design.widget.TextInputLayout>
                 <android.support.design.widget.TextInputLayout
@@ -98,6 +98,19 @@
                         android:layout_toRightOf="@+id/donHaveAccount"
                         android:onClick="goCreateAccount"
                         />
+
+                    <TextView
+                        android:id="@+id/Resetpass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/createHere"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="40dp"
+                        android:onClick="goResetPassword"
+                        android:text="@string/Forgot_Password"
+                        android:textColor="@color/editTextColorWhite"
+                        android:textSize="@dimen/textsize_donthaveaccount"
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 
