@@ -3,6 +3,7 @@ package com.pucese.pucesegram.view;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -19,6 +20,11 @@ import com.google.firebase.database.ValueEventListener;
 import com.pucese.pucesegram.LoginActivity;
 import com.pucese.pucesegram.R;
 import com.pucese.pucesegram.adapter.Adapter;
+import com.pucese.pucesegram.view.fragment.HomeFragment;
+import com.pucese.pucesegram.view.fragment.ProfileFragment;
+import com.pucese.pucesegram.view.fragment.SearchFragment;
+import com.roughike.bottombar.BottomBar;
+import com.roughike.bottombar.OnTabSelectListener;
 
 public class HomeActivity extends AppCompatActivity {
     RecyclerView ViewRecycler;

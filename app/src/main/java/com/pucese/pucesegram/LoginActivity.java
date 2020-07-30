@@ -16,9 +16,11 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.pucese.pucesegram.view.ContainerActivity;
 import com.pucese.pucesegram.view.CreateAccountActivity;
 import com.pucese.pucesegram.view.HomeActivity;
 import com.pucese.pucesegram.view.ResetPasswordActivity;
+import com.pucese.pucesegram.view.fragment.HomeFragment;
 
 public class LoginActivity extends AppCompatActivity
 {
@@ -72,7 +74,7 @@ public class LoginActivity extends AppCompatActivity
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful())
                 {
-                    Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, ContainerActivity.class);
                     startActivity(intent);
                     finish();
                 }else{

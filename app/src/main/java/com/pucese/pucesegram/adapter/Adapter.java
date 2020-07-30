@@ -50,13 +50,13 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
     public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView myText1;
         TextView myText2;
-        ImageView myimage;
         TextView myText3;
+        ImageView myimage;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             myText1 = itemView.findViewById(R.id.userNameCard);
-            myText2 = itemView.findViewById(R.id.likeNumberCard);
-            myText3 = itemView.findViewById(R.id.timeCard);
+            myText2 = itemView.findViewById(R.id.timeCard);
+            myText3 = itemView.findViewById(R.id.likeNumberCard);
             myimage = itemView.findViewById(R.id.pictureCard);
         }
     }

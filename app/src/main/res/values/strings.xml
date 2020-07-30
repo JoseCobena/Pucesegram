@@ -1,4 +1,9 @@
 <resources>
+    <string name="tab_search">Buscar</string>
+    <string name="tab_home">Casa</string>
+    <string name="tab_profile">Perfil</string>
+    <string name="tab_camera">Camara</string>
+    <string name="tab_favorite">Favorito</string>
     <string name="app_name">Pucesegram</string>
     <string name="title_activity_referencia">Lugares Turísticos</string>
     <string name="hint_username">Nombre de Usuario</string>
@@ -24,8 +29,8 @@
     <string name="Forgot_Password">Olvidé mi contraseña</string>
     <string name="transitionname_picture">transitionnamepicture</string>
     <string name="secondword_detail">Me gusta</string>
-    <string name="titleimagedetail">Bienvenidos a Esmeraldas</string>
-    <string name="lorem">Esmeraldas es una ciudad ecuatoriana; cabecera cantonal del Cantón Esmeraldas y capital de la Provincia de Esmeraldas, así como la urbe más grande y poblada de la misma. Se localiza en la orilla derecha de la desembocadura del río Esmeraldas, al norte de la región litoral del Ecuador, a una altitud de 15 msnm y con un clima lluvioso tropical de 25°C en promedio.</string>
+    <string name="titleimagedetail">Bienvenidos a Portete</string>
+    <string name="lorem">La Playa de Portete está ubicada al sur de la provincia de Esmeraldas, en el cantón Muisne. Es visitada por cientos de turistas por sus  hermosos paisajes y  extensa playa, se puede disfrutar de un entorno de naturaleza pura y mucha calma. El azul del cielo se refleja en las aguas cristalinas del mar. La espuma blanca de las olas irrumpe por instantes en la fina arena, mientras el viento agita las hojas de un extenso bosque de palmera a lo largo de la playa solitaria de la isla de Portete.</string>
 
     <string-array name="Lugares_turisticos">
         <item>Portete</item>
@@ -54,5 +59,8 @@
         <item>8 días</item>
         <item>3 días</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

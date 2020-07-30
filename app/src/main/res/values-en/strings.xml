@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
+    <string name="tab_search">Search</string>
+    <string name="tab_home">Home</string>
+    <string name="tab_profile">Profile</string>
+    <string name="tab_camera">Camera</string>
+    <string name="tab_favorite">Favorite</string>
     <string name="app_name">Pucesegram</string>
     <string name="title_activity_referencia">Tourist places</string>
     <string name="hint_username">Username</string>
@@ -23,12 +28,11 @@
     <string name="hello_world">Hello world</string>
     <string name="sign_out">Sign Out</string>
     <string name="Reset_Password">Reset Password</string>
-    <string name="Forgot_Password">Olvidé mi contraseña</string>
+    <string name="Forgot_Password">I forgot my password</string>
     <string name="transitionname_picture">transitionnamepicture</string>
-    <string name="secondword_detail">Like</string>
-    <string name="titleimagedetail">Welcome to Esmeraldas</string>
-    <string name="lorem">Esmeraldas is an Ecuadorian city; Cantonal head of the Esmeraldas Canton and capital of the Esmeraldas Province, as well as the largest and most populous city of the same. It is located on the right bank of the mouth of the Esmeraldas River, north of the Ecuadorian coastal region, at an altitude of 15 meters above sea level and with a tropical rainy climate of 25 ° C on average.</string>
-
+    <string name="secondword_detail">Likes</string>
+    <string name="titleimagedetail">Welcome to Portete</string>
+    <string name="lorem">Portete Beach is located in the south of the Esmeraldas province, in the Muisne canton. You can enjoy hundreds of tourists for its beautiful landscapes and extensive beach, you can enjoy an environment of pure nature and a lot of calm. The blue of the sky is reflected in the crystal clear waters of the sea. The white foam of the waves breaks for moments on the fine sand, while the wind shakes the leaves of an extensive palm forest along the lonely beach of the island of Portete.</string>
     <string-array name="Lugares_turisticos">
         <item>Portete</item>
         <item>Atacames</item>
@@ -37,6 +41,24 @@
         <item>Muisne</item>
         <item>Galera</item>
         <item>Estero de plátano</item>
+    </string-array>
+    <string-array name="likes">
+        <item>10 likes </item>
+        <item>7 likes</item>
+        <item>15 likes</item>
+        <item>8 likes</item>
+        <item>2 likes</item>
+        <item>4 likes</item>
+        <item>3 likes</item>
+    </string-array>
+    <string-array name="makeCard">
+        <item>4 days</item>
+        <item>3 days</item>
+        <item>8 days</item>
+        <item>15 days</item>
+        <item>1 day</item>
+        <item>8 days</item>
+        <item>3 days</item>
     </string-array>
 
 

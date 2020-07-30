@@ -11,8 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.PictureDetailActivity"
-            android:parentActivityName=".view.HomeActivity"/>
+        <activity android:name=".view.ContainerActivity"></activity>
+        <activity
+            android:name=".view.PictureDetailActivity"
+            android:parentActivityName=".view.ContainerActivity" />
         <activity
             android:name=".view.ResetPasswordActivity"
             android:parentActivityName=".LoginActivity" />
