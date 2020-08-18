@@ -21,6 +21,7 @@
             android:layout_height="@dimen/height_cardview"
             android:background="@drawable/portete"
             android:scaleType="centerCrop"
+            android:transitionName="@string/transitionname_picture"
             />
         <LinearLayout
             android:layout_width="match_parent"
@@ -79,6 +80,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/likenumbercard_card"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/firstword_textsize_card"
+                    android:layout_marginLeft="@dimen/timecard_marginleft_card"
+
+                    />
+                <TextView
+                    android:id="@+id/likeCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likecard_card"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/firstword_textsize_card"
                     android:layout_marginLeft="@dimen/timecard_marginleft_card"
