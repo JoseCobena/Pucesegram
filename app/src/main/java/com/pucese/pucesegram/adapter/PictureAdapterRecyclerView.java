@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import com.pucese.pucesegram.R;
 import com.pucese.pucesegram.model.Picture;
-import com.pucese.pucesegram.view.PictureDetailActivity;
+import com.pucese.pucesegram.picturedetail.view.PictureDetailActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -54,6 +54,12 @@ public class PictureAdapterRecyclerView extends  RecyclerView.Adapter<PictureAda
             {
                 Intent intent=new Intent(activity, PictureDetailActivity.class);
                 intent.putExtra("picture",picture.getPicture());
+                intent.putExtra("time",picture.getTime());
+                intent.putExtra("name",picture.getUsername());
+                intent.putExtra("like",picture.getLike_number());
+                intent.putExtra("description",picture.getDescription());
+
+
                 if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP)
                 {
                     Explode explode=new Explode();
@@ -83,6 +89,8 @@ public class PictureAdapterRecyclerView extends  RecyclerView.Adapter<PictureAda
         private TextView usernameCard;
         private TextView timeCard;
         private TextView likeNumberCard;
+        private TextView description;
+        private TextView title;
 
         public PictureViewHolder(@NonNull View itemView)
         {
@@ -91,7 +99,15 @@ public class PictureAdapterRecyclerView extends  RecyclerView.Adapter<PictureAda
             usernameCard=(TextView) itemView.findViewById(R.id.userNameCard);
             timeCard=(TextView) itemView.findViewById(R.id.timeCard);
             likeNumberCard=(TextView) itemView.findViewById(R.id.likeNumberCard);
+            description=(TextView) itemView.findViewById(R.id.textContentImageDetail);
+            title=(TextView) itemView.findViewById(R.id.userNameCard);
 
         }
     }
+
+    public void filtrar(ArrayList<Picture> filtroUsuarios) {
+        this.pictures = filtroUsuarios;
+        notifyDataSetChanged();
+    }
+
 }

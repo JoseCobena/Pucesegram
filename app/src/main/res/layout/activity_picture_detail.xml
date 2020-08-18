@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".view.PictureDetailActivity">
+    tools:context=".picturedetail.view.PictureDetailActivity">
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBar"
         android:layout_width="match_parent"
@@ -85,6 +85,14 @@
                 android:layout_height="@dimen/height_divider"
                 android:background="@android:color/darker_gray"
                 />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_vertival_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin_title"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                >
             <TextView
                 android:id="@+id/titleImage"
                 android:layout_width="wrap_content"
@@ -95,6 +103,19 @@
                 android:textStyle="bold"
                 android:paddingTop="@dimen/paddingtop_titleimagedetail"
                 />
+            <TextView
+                android:id="@+id/secondTitleDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_likenumberdetail"
+                android:text="@string/secondtitle_detail"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/paddingtop_titleimagedetail"
+                android:layout_marginLeft="@dimen/marginleft_secondword"
+                />
+            </LinearLayout>
+
             <TextView
                 android:id="@+id/textContentImageDetail"
                 android:layout_width="wrap_content"

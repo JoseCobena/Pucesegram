@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pucese.pucesegram.view.fragment.ProfileFragment">
+    tools:context=".fragment.profile.view.ProfileFragment">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarProfile"
@@ -53,6 +53,7 @@
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
+
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v7.widget.RecyclerView
@@ -61,6 +62,7 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         />
+
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="@dimen/dimen_cicleimageprofile"
@@ -98,4 +100,5 @@
         app:targetY="@dimen/margintoptargety_usernametoolbarprofile"
         app:targetAlpha="1"
         />
+
 </android.support.design.widget.CoordinatorLayout>

@@ -35,5 +35,6 @@
     <dimen name="margintoptargety_usernametoolbarprofile">15dp</dimen>
     <dimen name="recycleview_searchphotos">10dp</dimen>
     <dimen name="bottomnavigationview_height">70dp</dimen>
+    <dimen name="activity_horizontal_margin_title">110dp</dimen>
 
 </resources>

@@ -22,7 +22,7 @@
     <string name="username_card">Pocho</string>
     <string name="firstword_card">Make</string>
     <string name="timecard_card">4 days</string>
-    <string name="likenumbercard_card">10 likes</string>
+    <string name="likenumbercard_card">10</string>
     <string name="hint_password">Password</string>
     <string name="text_button_signOut">Sign Out</string>
     <string name="hello_world">Hello world</string>
@@ -31,8 +31,12 @@
     <string name="Forgot_Password">I forgot my password</string>
     <string name="transitionname_picture">transitionnamepicture</string>
     <string name="secondword_detail">Likes</string>
-    <string name="titleimagedetail">Welcome to Portete</string>
+    <string name="titleimagedetail">Welcome to</string>
     <string name="lorem">Portete Beach is located in the south of the Esmeraldas province, in the Muisne canton. You can enjoy hundreds of tourists for its beautiful landscapes and extensive beach, you can enjoy an environment of pure nature and a lot of calm. The blue of the sky is reflected in the crystal clear waters of the sea. The white foam of the waves breaks for moments on the fine sand, while the wind shakes the leaves of an extensive palm forest along the lonely beach of the island of Portete.</string>
+    <string name="secondtitle_detail">Esmeraldas</string>
+    <string name="likecard_card">likes</string>
+    <string name="buscar">Search</string>
+    <string name="login_error">"Ha ocurrido un error "</string>
     <string-array name="Lugares_turisticos">
         <item>Portete</item>
         <item>Atacames</item>

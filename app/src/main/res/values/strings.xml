@@ -21,7 +21,7 @@
     <string name="username_card">Pocho</string>
     <string name="firstword_card">Hace</string>
     <string name="timecard_card">4 días</string>
-    <string name="likenumbercard_card">10 me gusta</string>
+    <string name="likenumbercard_card">10</string>
     <string name="text_button_signOut">Cerrar sesion</string>
     <string name="hello_world">Hola mundo</string>
     <string name="sign_out">Cerrar sesion</string>
@@ -29,7 +29,7 @@
     <string name="Forgot_Password">Olvidé mi contraseña</string>
     <string name="transitionname_picture">transitionnamepicture</string>
     <string name="secondword_detail">Me gusta</string>
-    <string name="titleimagedetail">Bienvenidos a Portete</string>
+    <string name="titleimagedetail">Bienvenidos a</string>
     <string name="lorem">La Playa de Portete está ubicada al sur de la provincia de Esmeraldas, en el cantón Muisne. Es visitada por cientos de turistas por sus  hermosos paisajes y  extensa playa, se puede disfrutar de un entorno de naturaleza pura y mucha calma. El azul del cielo se refleja en las aguas cristalinas del mar. La espuma blanca de las olas irrumpe por instantes en la fina arena, mientras el viento agita las hojas de un extenso bosque de palmera a lo largo de la playa solitaria de la isla de Portete.</string>
 
     <string-array name="Lugares_turisticos">
@@ -61,6 +61,10 @@
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="secondtitle_detail">Esmeraldas</string>
+    <string name="likecard_card">me gusta</string>
+    <string name="buscar">Buscar</string>
+    <string name="login_error">"Ha ocurrido un error "</string>
 
 
 </resources>

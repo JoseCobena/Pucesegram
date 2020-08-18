@@ -5,12 +5,15 @@ public class Picture
     private String picture;
     private String username;
     private String time;
+    private String description;
     private String like_number="0 días";
 
-    public Picture(String picture, String username, String time, String like_number) {
+
+    public Picture(String picture, String username, String time, String like_number, String description) {
         this.picture = picture;
         this.username = username;
         this.time = time;
+        this.description = description;
         this.like_number = like_number;
     }
 
@@ -44,5 +47,12 @@ public class Picture
 
     public void setLike_number(String like_number) {
         this.like_number = like_number;
+    }
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
